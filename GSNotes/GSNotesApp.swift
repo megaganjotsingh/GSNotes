@@ -2,7 +2,7 @@
 //  GSNotesApp.swift
 //  GSNotes
 //
-//  Created by Gaganjot Singh on 20/06/24.
+//  Created by Gaganjot Singh on 20/05/24.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct GSNotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FolderView()
         }
     }
 }

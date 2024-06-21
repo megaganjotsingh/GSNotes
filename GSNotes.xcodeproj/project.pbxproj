@@ -8,18 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		938970CB2C24949900FCAA31 /* GSNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970CA2C24949900FCAA31 /* GSNotesApp.swift */; };
-		938970CD2C24949900FCAA31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970CC2C24949900FCAA31 /* ContentView.swift */; };
 		938970CF2C24949A00FCAA31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938970CE2C24949A00FCAA31 /* Assets.xcassets */; };
 		938970D32C24949A00FCAA31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938970D22C24949A00FCAA31 /* Preview Assets.xcassets */; };
+		9393F1462C2553130072328C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1452C2553130072328C /* Note.swift */; };
+		9393F15E2C2553880072328C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1522C2553880072328C /* SearchBar.swift */; };
+		9393F1642C2553AD0072328C /* SearchBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1632C2553AD0072328C /* SearchBarButton.swift */; };
+		9393F16D2C2555D30072328C /* SearchTopToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1662C2555D30072328C /* SearchTopToolBar.swift */; };
+		9393F16E2C2555D30072328C /* FolderToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1672C2555D30072328C /* FolderToolbar.swift */; };
+		9393F16F2C2555D30072328C /* NewFolderToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1682C2555D30072328C /* NewFolderToolBar.swift */; };
+		9393F1702C2555D30072328C /* NotesTopToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1692C2555D30072328C /* NotesTopToolBar.swift */; };
+		9393F1712C2555D30072328C /* NotesBottomToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F16A2C2555D30072328C /* NotesBottomToolBar.swift */; };
+		9393F1722C2555D30072328C /* BlankNoteTopToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F16B2C2555D30072328C /* BlankNoteTopToolBar.swift */; };
+		9393F1732C2555D30072328C /* BlankNoteBottomToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F16C2C2555D30072328C /* BlankNoteBottomToolBar.swift */; };
+		9393F17C2C2555E20072328C /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1742C2555E20072328C /* FolderView.swift */; };
+		9393F17D2C2555E20072328C /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1752C2555E20072328C /* CanvasView.swift */; };
+		9393F17E2C2555E20072328C /* NewFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1762C2555E20072328C /* NewFolderView.swift */; };
+		9393F17F2C2555E20072328C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1772C2555E20072328C /* SearchView.swift */; };
+		9393F1802C2555E20072328C /* BlankNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1782C2555E20072328C /* BlankNoteView.swift */; };
+		9393F1822C2555E20072328C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F17A2C2555E20072328C /* ImagePickerView.swift */; };
+		9393F1832C2555E20072328C /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F17B2C2555E20072328C /* NotesView.swift */; };
+		9393F1862C255B560072328C /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393F1852C255B560072328C /* Array+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		938970C72C24949900FCAA31 /* GSNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938970CA2C24949900FCAA31 /* GSNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSNotesApp.swift; sourceTree = "<group>"; };
-		938970CC2C24949900FCAA31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		938970CE2C24949A00FCAA31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		938970D02C24949A00FCAA31 /* GSNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GSNotes.entitlements; sourceTree = "<group>"; };
 		938970D22C24949A00FCAA31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9393F1452C2553130072328C /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		9393F1522C2553880072328C /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		9393F1632C2553AD0072328C /* SearchBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarButton.swift; sourceTree = "<group>"; };
+		9393F1662C2555D30072328C /* SearchTopToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTopToolBar.swift; sourceTree = "<group>"; };
+		9393F1672C2555D30072328C /* FolderToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderToolbar.swift; sourceTree = "<group>"; };
+		9393F1682C2555D30072328C /* NewFolderToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFolderToolBar.swift; sourceTree = "<group>"; };
+		9393F1692C2555D30072328C /* NotesTopToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTopToolBar.swift; sourceTree = "<group>"; };
+		9393F16A2C2555D30072328C /* NotesBottomToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesBottomToolBar.swift; sourceTree = "<group>"; };
+		9393F16B2C2555D30072328C /* BlankNoteTopToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankNoteTopToolBar.swift; sourceTree = "<group>"; };
+		9393F16C2C2555D30072328C /* BlankNoteBottomToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankNoteBottomToolBar.swift; sourceTree = "<group>"; };
+		9393F1742C2555E20072328C /* FolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		9393F1752C2555E20072328C /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		9393F1762C2555E20072328C /* NewFolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFolderView.swift; sourceTree = "<group>"; };
+		9393F1772C2555E20072328C /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		9393F1782C2555E20072328C /* BlankNoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankNoteView.swift; sourceTree = "<group>"; };
+		9393F17A2C2555E20072328C /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		9393F17B2C2555E20072328C /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		9393F1852C255B560072328C /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +86,11 @@
 		938970C92C24949900FCAA31 /* GSNotes */ = {
 			isa = PBXGroup;
 			children = (
+				9393F1842C255B440072328C /* Extensions */,
+				9393F14A2C25536A0072328C /* Components */,
+				9393F1472C25533D0072328C /* Views */,
+				9393F1442C25530B0072328C /* Data */,
 				938970CA2C24949900FCAA31 /* GSNotesApp.swift */,
-				938970CC2C24949900FCAA31 /* ContentView.swift */,
 				938970CE2C24949A00FCAA31 /* Assets.xcassets */,
 				938970D02C24949A00FCAA31 /* GSNotes.entitlements */,
 				938970D12C24949A00FCAA31 /* Preview Content */,
@@ -67,6 +104,52 @@
 				938970D22C24949A00FCAA31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9393F1442C25530B0072328C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9393F1452C2553130072328C /* Note.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9393F1472C25533D0072328C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9393F1782C2555E20072328C /* BlankNoteView.swift */,
+				9393F1752C2555E20072328C /* CanvasView.swift */,
+				9393F1742C2555E20072328C /* FolderView.swift */,
+				9393F17A2C2555E20072328C /* ImagePickerView.swift */,
+				9393F1762C2555E20072328C /* NewFolderView.swift */,
+				9393F17B2C2555E20072328C /* NotesView.swift */,
+				9393F1772C2555E20072328C /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9393F14A2C25536A0072328C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9393F16C2C2555D30072328C /* BlankNoteBottomToolBar.swift */,
+				9393F16B2C2555D30072328C /* BlankNoteTopToolBar.swift */,
+				9393F1672C2555D30072328C /* FolderToolbar.swift */,
+				9393F1682C2555D30072328C /* NewFolderToolBar.swift */,
+				9393F16A2C2555D30072328C /* NotesBottomToolBar.swift */,
+				9393F1692C2555D30072328C /* NotesTopToolBar.swift */,
+				9393F1662C2555D30072328C /* SearchTopToolBar.swift */,
+				9393F1632C2553AD0072328C /* SearchBarButton.swift */,
+				9393F1522C2553880072328C /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9393F1842C255B440072328C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9393F1852C255B560072328C /* Array+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +222,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938970CD2C24949900FCAA31 /* ContentView.swift in Sources */,
 				938970CB2C24949900FCAA31 /* GSNotesApp.swift in Sources */,
+				9393F1832C2555E20072328C /* NotesView.swift in Sources */,
+				9393F17C2C2555E20072328C /* FolderView.swift in Sources */,
+				9393F1712C2555D30072328C /* NotesBottomToolBar.swift in Sources */,
+				9393F16F2C2555D30072328C /* NewFolderToolBar.swift in Sources */,
+				9393F15E2C2553880072328C /* SearchBar.swift in Sources */,
+				9393F16D2C2555D30072328C /* SearchTopToolBar.swift in Sources */,
+				9393F1702C2555D30072328C /* NotesTopToolBar.swift in Sources */,
+				9393F17D2C2555E20072328C /* CanvasView.swift in Sources */,
+				9393F1642C2553AD0072328C /* SearchBarButton.swift in Sources */,
+				9393F1862C255B560072328C /* Array+Extension.swift in Sources */,
+				9393F1462C2553130072328C /* Note.swift in Sources */,
+				9393F1732C2555D30072328C /* BlankNoteBottomToolBar.swift in Sources */,
+				9393F17F2C2555E20072328C /* SearchView.swift in Sources */,
+				9393F16E2C2555D30072328C /* FolderToolbar.swift in Sources */,
+				9393F17E2C2555E20072328C /* NewFolderView.swift in Sources */,
+				9393F1802C2555E20072328C /* BlankNoteView.swift in Sources */,
+				9393F1722C2555D30072328C /* BlankNoteTopToolBar.swift in Sources */,
+				9393F1822C2555E20072328C /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +382,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
@@ -318,7 +418,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
