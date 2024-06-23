@@ -15,10 +15,10 @@ struct NotesView: View {
         self.noteList = noteList
         self.title = title
     }
-    
+
     var notesBottomTitle: String {
         let notesCount = noteList.noteList.count
-        
+
         return notesCount == 0 ? "No Note" : notesCount > 1 ? "\(notesCount) notes" : "1 note"
     }
 
@@ -46,7 +46,7 @@ struct NotesView: View {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 NotesTopToolBar()
             }
-            
+
             ToolbarItemGroup(placement: .bottomBar) {
                 NotesBottomToolBar(noteList: noteList, notesNumber: notesBottomTitle)
             }

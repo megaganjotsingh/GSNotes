@@ -10,36 +10,36 @@ import SwiftUI
 
 struct BlankNoteView: View {
     @ObservedObject var noteList: NoteList
-    
+
     @State private var title: String = ""
     @State private var text: String = ""
     @State var isChecked: Bool = false
     @State var isActive: Bool = false
     @State private var keyboardVisible = false
-    
+
     @StateObject var sharedVar = SharedVar()
-    
+
     private var canvasView = PKCanvasView()
     private var chosenNoteId: Int
-    
+
     init(note: NoteList, chosenNoteId: Int) {
         noteList = note
         self.chosenNoteId = chosenNoteId
-        
+
         var chosenNote: Note? {
             return noteList.noteList.first { $0.id == chosenNoteId }
         }
-        
+
         if chosenNote != nil {
             _title = State(initialValue: chosenNote!.title)
             _text = State(initialValue: chosenNote!.description)
         }
-        
+
         UITextField.appearance().clearButtonMode = .never
     }
-    
+
     func toggle() { isChecked.toggle() }
-    
+
     var body: some View {
         VStack {
             if sharedVar.isChecklistPressed {
@@ -77,14 +77,14 @@ struct BlankNoteView: View {
                 .padding(.bottom, 0)
                 .fontWeight(.bold)
                 TextEditor(text: $text)
-                    .onChange(of: text, perform: { newValue in
+                    .onChange(of: text, perform: { _ in
                         isActive = true
                     })
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.clear)
             }
-            
+
             Spacer()
         }
         .toolbar {
@@ -92,7 +92,7 @@ struct BlankNoteView: View {
             ToolbarItemGroup(placement: .bottomBar) {
                 BlankNoteBottomToolBar(sharedVar: sharedVar, text: $text)
             }
-            
+
             // top toolbar if canvas is showing
             if sharedVar.isCanvasPressed {
                 ToolbarItemGroup(placement: .principal) {
@@ -105,7 +105,7 @@ struct BlankNoteView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 20, height: 20)
                         }
-                        
+
                         Button(action: {
                             // Perform action for the first toolbar button
                         }) {
@@ -127,7 +127,7 @@ struct BlankNoteView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 22, height: 22)
                         }
-                        
+
                         Button(action: {}) {
                             Text("Done")
                         }
@@ -135,7 +135,7 @@ struct BlankNoteView: View {
                     .padding(.leading)
                 }
             }
-            
+
             // top toolbar if textfield is active
             else if isActive {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -147,7 +147,7 @@ struct BlankNoteView: View {
                             else {
                                 return
                             }
-                            
+
                             let shareSheet = UIActivityViewController(activityItems: ["Sharing content"], applicationActivities: nil)
                             window.rootViewController?.present(shareSheet, animated: true, completion: nil)
                         }) {
@@ -156,7 +156,7 @@ struct BlankNoteView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 22, height: 22)
                         }
-                        
+
                         Menu {
                             HStack {
                                 Button {
@@ -173,7 +173,7 @@ struct BlankNoteView: View {
                                 .frame(width: 22, height: 22)
                         }
                         .padding()
-                        
+
                         Button {
                             if chosenNoteId == -1 {
                                 noteList.noteList.append(
@@ -199,7 +199,7 @@ struct BlankNoteView: View {
                                 isActive = false
                                 // isFocused = false
                             }
-                            
+
                         } label: {
                             Text("Done")
                         }
@@ -218,7 +218,7 @@ struct BlankNoteView: View {
             NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { _ in
                 self.keyboardVisible = true
             }
-            
+
             NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { _ in
                 self.keyboardVisible = false
             }

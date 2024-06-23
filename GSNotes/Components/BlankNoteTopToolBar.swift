@@ -62,7 +62,7 @@ struct BlankNoteTopToolBar: View {
             .padding(.leading)
         }
     }
-    
+
     func presentShareActivity() {
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let window = windowScene.windows.first
