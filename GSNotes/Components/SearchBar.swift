@@ -10,10 +10,9 @@
 import SwiftUI
 
 struct SearchBar: View {
-    
     @Binding var text: String
     @Binding var showFilteredResults: Bool
-    
+
     @State var dataArray: [String] = []
 
     var body: some View {

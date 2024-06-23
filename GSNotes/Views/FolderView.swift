@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct FolderView: View {
-    
     @State private var isEditing: Bool = false
     @State private var showingNewFolderView = false
     @State private var IsPressedEditButton = false
-    
+
     @StateObject var folderList = FolderList()
 
     var body: some View {

@@ -9,6 +9,6 @@ import Foundation
 
 extension Array {
     func getElement(at index: Int) -> Element? {
-        self.count > index ? self[index] : nil
+        count > index ? self[index] : nil
     }
 }

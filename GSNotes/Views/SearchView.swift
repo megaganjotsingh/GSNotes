@@ -24,7 +24,7 @@ struct SearchView: View {
         }
     }
 
-    let items = [
+    let items: [(systemName: String, text: String)] = [
         (systemName: "person.crop.circle", text: "Shared Notes"),
         (systemName: "lock.fill", text: "Locked Notes"),
         (systemName: "checklist", text: "Notes with Checklists"),
