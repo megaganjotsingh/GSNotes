@@ -10,6 +10,7 @@
 import SwiftUI
 
 struct SearchBar: View {
+    
     @Binding var text: String
     @Binding var showFilteredResults: Bool
 

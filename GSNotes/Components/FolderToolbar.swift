@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct FolderToolbar: View {
+    
     @ObservedObject var noteList: NoteList
     var action: () -> Void
 

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct NewFolderView: View {
+    
     @ObservedObject var folderList: FolderList
     @Environment(\.dismiss) var dismiss
     @State private var text: String = "New folder"

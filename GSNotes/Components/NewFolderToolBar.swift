@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct NewFolderToolbar: View {
+    
     let okAction: () -> Void
     let cancelAction: () -> Void
 
