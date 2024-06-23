@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchBarButton: View {
+    
     var body: some View {
         NavigationLink(destination: SearchView()) {
             HStack {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NotesView: View {
+    
     @ObservedObject var noteList: NoteList
     var title: String
 

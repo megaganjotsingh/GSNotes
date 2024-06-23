@@ -9,6 +9,7 @@ import PencilKit
 import SwiftUI
 
 struct BlankNoteView: View {
+    
     @ObservedObject var noteList: NoteList
 
     @State private var title: String = ""

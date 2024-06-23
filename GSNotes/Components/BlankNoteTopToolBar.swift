@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BlankNoteTopToolBar: View {
+    
     var body: some View {
         HStack {
             Spacer()

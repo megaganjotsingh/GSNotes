@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchTopToolBar: View {
+    
     @Environment(\.presentationMode) var presentationMode
     @Binding var text: String
     @Binding var showFilteredResults: Bool

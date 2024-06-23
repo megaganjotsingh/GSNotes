@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NotesBottomToolBar: View {
+    
     @ObservedObject var noteList: NoteList
     var notesNumber: String
 

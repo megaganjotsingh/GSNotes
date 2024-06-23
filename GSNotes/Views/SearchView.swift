@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
+    
     @FocusState private var keyboardFocused: Bool
     @State private var searchText = ""
     @State private var showFilteredResults = false
